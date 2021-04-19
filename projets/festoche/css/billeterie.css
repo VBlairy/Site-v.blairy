@@ -1,0 +1,122 @@
+.liste div span:last-of-type {
+    position: absolute;
+    right: 7%;
+    font-family: 'Bahianita', sans-serif;
+    color: #254053;
+    list-style: none;
+    text-align: right;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #9F502F;
+    paint-order: stroke fill;
+}
+
+.liste div span:first-of-type{
+    position: relative;
+    font-family: 'Bahianita', sans-serif;
+    color: #254053;
+    list-style: none;
+    background: #9F502F;
+    z-index: 1;
+}
+
+.bandes {
+    background: #9F502F;
+}
+
+#bande11 {
+    border-top: 8px solid #254053;
+    margin-top: -27px;
+    font-size: 6.25em;
+    margin-bottom: 8px;
+}
+
+#bande21 {
+    width: 94%;
+    font-size: 6.25em;
+    margin-bottom: 7px;;
+}
+
+#bande31 {
+    width: 75.5%;
+    font-size: 5.3125em;
+    margin-bottom: 5px;
+}
+
+#bande41 {
+    width: 57.5%;
+    font-size: 5.3125em;
+    margin-bottom: 5px;
+}
+
+#bande51 {
+    width: 36.5%;
+    font-size: 4.5em;
+    margin-bottom: 4px;
+}
+
+#bande61 {
+    width: 18.5%;
+    font-size: 4.5em;
+    margin-bottom: 4px;
+}
+
+#bande71 {
+    width: 3%;
+    height: 55px;
+    display: block;
+}
+
+#reduc {
+    color: #9F502F;
+    width: 100%;
+    text-align: center;
+    font-family: 'Bahianita', sans-serif;
+    font-size: 4.6875em;
+}
+
+#reduc2 {
+    color: #9F502F;
+    text-align: center;
+    font-family: 'Bahiana Regular', sans-serif;
+    font-size: 9.375em;
+}
+
+@media(max-width:1191px){
+    body {
+        font-size: 11px;
+    }
+}
+
+@media(max-width:991px) {
+    body {
+        font-size: 8px;
+    }
+}
+
+@media(max-width:767px) {
+    body {
+        font-size: 7px;
+    }
+    .liste div span:last-of-type {
+        display: block;
+        margin-top: -4%;
+    }
+    .liste div span:first-of-type {
+        display: block;
+        background: transparent;
+        -webkit-text-stroke-width: 4px;
+        -webkit-text-stroke-color: #9F502F;
+        paint-order: stroke fill;
+    }
+    .bandes {
+        background: #9F502F;
+        height: 2em;
+        white-space: nowrap;
+    }
+}
+
+@media(max-width:479px){
+    .liste div span:last-of-type {
+        right: 0;
+    }
+}

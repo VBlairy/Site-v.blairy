@@ -1,0 +1,173 @@
+@font-face {
+  font-family: 'vtf_gulaxregular';
+  src: url(../font/gulax-webfont.eot);
+  src: url(../font/gulax-webfont.eot) format('embedded-opentype'),
+       url(../font/gulax-webfont.woff) format('woff'),
+       url(../font/gulax-webfont.ttf) format('truetype'),
+       url(../font/gulax-webfont.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+html {
+  scroll-behavior: smooth
+}
+
+
+body {
+  font-family: 'vtf_gulaxregular',sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  margin: 0px;
+  color: black;
+  line-height: 1.5;
+}
+
+.home {}
+
+.home a {
+  text-decoration: none;
+}
+
+.home>a {
+  transition: 0.3s;
+  display: grid;
+}
+
+
+@media (max-width:640px) {
+  nav {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .valentin {
+    grid-column: 1/-1;
+    width: 50vw;
+    justify-self: center;
+  }
+
+  .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .img {
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width:640px) {
+  .home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+}
+
+@media (min-width:960px) {
+  .home {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0px;
+  }
+
+  .valentin {
+    display: grid;
+  }
+}
+
+nav {
+  grid-column: 2/-1;
+}
+
+.nav{
+  grid-template-columns: 1/-1;
+}
+
+nav a {
+  display: inline-grid;
+}
+
+h1 {
+  font-family: 'vtf_gulaxregular',sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  font-size: 30px;
+  font-style: normal;
+  display: inline;
+}
+
+h5 {
+  font-family: 'vtf_gulaxregular',sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.projet {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  grid-area: 1/1/-1/-1;
+}
+
+
+.home a:hover .fixe {
+  opacity: 0;
+}
+
+.container {
+  display: grid;
+  margin-bottom: 24px;
+
+}
+
+.container>img {
+  border-radius: 15px;
+}
+
+.text:hover {
+  opacity: 1;
+}
+
+.text {
+  display: flex;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: 'vtf_gulaxregular',sans-serif;
+  line-height: 1.2;
+  background-color: rgba(117, 102, 255, 0.8);
+  border-radius: 15px;
+  opacity: 0;
+  transition: .3s ease;
+  grid-area: 1/1/-1/-1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.page {
+  padding: 50px;
+}
+
+.annee {
+  color: rgb(255, 102, 153);
+  font-weight: 600;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.retrait {
+  margin-left: 20px;
+}

@@ -1,0 +1,29 @@
+body {
+    background: #000;
+    color: #0f0;
+    margin: 24px;
+    font-family: 'Px437 IBM PS/2thin4', serif;
+    font-size: 16px;
+}
+
+svg, .txt1, .txt2, .txt3, .txt4, .txt5, .txt6, .txt7, .txt8, .txt9, .txt10, .txt11, .txt30 > span, .txt40 > .dot, .txt50 {
+    display: none;
+}
+
+body .irma {
+    font-family: sans-serif;
+    margin: auto;
+    display: grid;
+    grid-auto-flow: row;
+    font-size: 11px;
+    background: #000;
+    color: #fff;
+    height: 100vh;
+    align-items: center;
+}
+
+.line {
+    text-align: center;
+    line-height: 2.5vh;
+    font-size: 2.5vh;
+}

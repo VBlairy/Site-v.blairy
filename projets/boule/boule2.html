@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boule</title>
+    <style>@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+        body{
+            background: black;
+        }
+       
+        #hand ,#boule{
+          height:100vh;
+        }
+        #hand{
+        position:absolute;
+          
+        }
+        #container{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translateY(-50%)translateX(-50%);
+        }
+        #word{
+          position:absolute;
+          top:25%;
+          left:-2%;
+          transform: scale(0);
+          color:#0F0;
+          font-weight:bold;
+          opacity:1;
+          width: 100%;
+          text-align:center;
+          font-size:30px;
+          font-family: 'Indie Flower', cursive;
+          
+        }</style>
+</head>
+<body>
+    <div id="container">
+        <img src="img/main.svg" id="hand"></img>
+        <img src="img/boule.svg" id="boule"></img>
+        <div id="word"></div>
+        </div>
+
+        
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js'></script>
+<script>
+    var tl = gsap.timeline({onRepeat: changeWord,onStart: changeWord,repeat: -1, repeatDelay: 0});
+    //initialise la timeline en repeat illimité + onRepeat on change le mot + onStart on change le mot aussi !!
+    tl.set("#hand", {x: -300, duration: 1, ease:"linear"});
+    //positionne la main a -300 sur x
+    tl.to("#hand", {x: 0, duration: 2, ease:"linear"});
+    //avance la main à 0 sur x  en 2 secondes
+    var n=15,
+        rx=document.getElementById('hand').clientHeight/10,
+        ry=document.getElementById('hand').clientHeight/10,
+        so=0,wh=35,cw=true;
+    //initialisation des variables pour la fonction qui fait le  cercle
+    // dans le for  c'est une fonction mathématique pour faire un cercle
+    for (let i = 0; i < 50; i++) {
+      var top1=String(ry + -ry * Math.cos((360 / n / 180) * (i + so) * Math.PI)) + 'px';
+      var left1=String(rx + rx * (cw ? Math.sin((360 / n / 180) * (i + so) * Math.PI) : -Math.sin((360 / n / 180) * (i + so) * Math.PI))) + 'px';
+      tl.to("#hand", {x: top1,y: left1 , duration: 0.1, ease:"linear"});
+    }
+    //on abaisse la main de 250
+    tl.to("#hand", {y: 250, duration: 2, ease:"linear"});
+    
+    //on affiche le message
+    tl.to("#word", {scale: 1 ,opacity: 1, duration: 1, ease:Power2.easeInOut});
+    
+    //la main disparait
+    tl.to("#hand", {opacity: 0, duration: 1, ease:"linear"});
+    
+    
+    //fonction qui choisit le mot
+    function changeWord(){
+    var words = ['Rencontre', 'Décès', 'Naissance', 'Trahison', 'Accident', 'Maladie', 'Succès', 'Échec', 'Malédiction', 'Bénédiction', 'Infidélité', 'Créativité', 'Abondance', 'Destin'];
+    var div = document.getElementById('word');
+    div.innerHTML = words[getRandomInt(words.length)];
+    }
+    
+    function getRandomInt(max) {
+      return Math.floor(Math.random() * Math.floor(max));
+    }</script>
+
+
+</body>
+</html>

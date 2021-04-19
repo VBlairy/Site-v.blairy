@@ -1,0 +1,122 @@
+.liste {
+    font-family: 'Bahianita', sans-serif;
+    color: #254053;
+}
+
+.bandes {
+    background: #9F502F;
+}
+
+.bandes span {
+    display: inline list-item;
+    padding-left: 16%;
+}
+
+#bande1 {
+    border-top: 8px solid #254053;
+    font-size: 6.25em;
+    margin-bottom: 8px;
+}
+
+#bande2 {
+    font-size: 6.25em;
+    margin-bottom: 7px;
+}
+
+#bande3 {
+    font-size: 5.3125em;
+    margin-bottom: 5px;
+}
+
+#bande4 {
+    font-size: 5.3125em;
+    margin-bottom: 5px;
+}
+
+#bande5 {
+    font-size: 4.5em;
+    margin-bottom: 4px;
+}
+
+#bande6 {
+    font-size: 4.5em;
+    margin-bottom: 4px;
+}
+
+#bande7 {
+    height: 50px;
+    font-size: 3.125em;
+}
+
+#discours {
+    position: relative;
+}
+
+#discours p {
+    margin: 0 15%;
+}
+
+#discours:before {
+    content: url('../images/cross.svg');
+    position: absolute;
+    width: 100%;
+    top: 0;
+    display: flex;
+}
+
+#discours1 {
+    font-family: 'Bahianita', sans-serif;
+    font-size: 3.3em;
+    color: #9F502F;
+    text-align: center;
+    line-height: 125%;
+}
+
+#romeo {
+    font-family: 'Bahiana Regular', sans-serif;
+    font-size: 23.5em;
+    color: #9F502F;
+    text-align: center;
+    line-height: 75%;
+}
+
+#discours2 {
+    font-family: 'Bahianita', sans-serif;
+    font-size: 4.8em;
+    color: #9F502F;
+    text-align: center;
+    line-height: 75%;
+}
+
+#cross {
+    position: absolute;
+    bottom: 0;
+}
+
+@media(max-width:1191px){
+
+}
+
+@media(max-width:991px) {
+    #discours p {
+        margin: 0 14%;
+    }
+    body {
+        font-size: 7px;
+    }
+}
+
+@media(max-width:767px) {
+    body {
+        font-size: 8px;
+    }
+    #romeo {
+        font-size: 16em;
+    }
+}
+
+@media(max-width:479px){
+    #bande7 {
+        height: 70px;
+    }
+}

@@ -1,0 +1,129 @@
+#fondrad {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    background: #9F502F;
+    border-top: 7px solid #254053;
+    border-radius: 425px 0 0 0;
+    margin-top: -2.9%;
+}
+
+#pentacle {
+    width: 100%;
+}
+
+#pentacleDiv {
+    position: absolute;
+    width: 42.5%;
+    bottom: 0;
+}
+
+#pentacleDiv:before {
+    content: '';
+    position: absolute;
+    background-image: url("../images/sulfur.svg");
+    transition: opacity 1s ease;
+    opacity: 0;
+    width: 10%;
+    height: 31%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: 59%;
+    left: 42%;
+}
+
+#pentacleDiv:hover:before {
+    opacity: 1;
+}
+
+#textPentacle {
+    width: 67%;
+    margin-left: 33%;
+}
+
+#textPentacle span{
+    display: block;
+    font-family: 'Bahiana Regular', sans-serif;
+    color: #254053;
+}
+
+#info-lieu {
+    font-size: 9.7em;
+    line-height: 110px;
+    padding: 2.5% 0 0 0.5%;
+}
+
+#info-date {
+    font-size: 5em;
+    line-height: 110px;
+    text-align: center;
+    padding: 0 0 0 5%;
+}
+
+#vous {
+    font-size: 5.7em;
+    line-height: 74px;
+    text-align: center;
+    padding: 0 0 0 24%;
+}
+
+#vivant {
+    display: block;
+    width: 55%;
+    margin-left: 11%;
+}
+
+#vivant:hover {
+    background-size: 100%;
+    background-image: url("../images/vivant2.svg");
+}
+
+@media(max-width:1191px){
+    #fondrad {
+        font-size: 11px;
+        border-radius: 235px 0 0 0;
+    }
+    #textPentacle span {
+        height: 63px;
+    }
+    #info-lieu {
+        padding: 0 0 0 0.5%;
+    }
+
+}
+
+@media(max-width:991px) {
+
+}
+
+@media(max-width:767px) {
+    #fondrad {
+        font-size: 10px;
+    }
+
+    #textPentacle {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    #pentacleDiv {
+        position: relative;
+        width: 100%;
+        margin-top: 31px;
+    }
+
+    #textPentacle span {
+        height: 65px;
+    }
+}
+
+@media(max-width:479px){
+    #fondrad {
+        font-size: 7px;
+    }
+    #textPentacle span {
+        height: 50px;
+    }
+}
+
+

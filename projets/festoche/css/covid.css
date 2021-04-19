@@ -1,0 +1,90 @@
+#covid {
+    font-size: 10px;
+}
+
+#sulvid{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 34%;
+}
+
+#rectrad{
+    background: #9F502F;
+    border-top: 8px solid #254053;
+    border-radius: 0 426px 0 0;
+    position: relative;
+}
+
+#corona{
+    font-family: 'Bahiana Regular', sans-serif;
+    color: #254053;
+    margin-right: 33%;
+}
+
+#cov1{
+    font-size: 15.9375em;
+    line-height: 0.8em;
+}
+
+#cov2{
+    font-size: 6.5625em;
+    line-height: 2em;
+
+}
+
+#cov3{
+    font-size: 4.0625em;
+    line-height: 2em;
+}
+
+#rectbleu{
+    text-align: center;
+    background: #254053;
+    z-index: 1;
+    position: relative;
+}
+
+#foot{
+    font-family: 'Bahiana Regular', sans-serif;
+    color: #9F502F;
+    font-size: 3em;
+    line-height: 2em;
+}
+
+@media(max-width:1191px){
+    #covid {
+        font-size: 10px;
+    }
+}
+
+@media(max-width:991px) {
+    #covid {
+        font-size: 8px;
+    }
+}
+
+@media(max-width:767px) {
+    #cov2, #cov3, #foot {
+        line-height: 1.5em;
+    }
+
+    #corona {
+        margin-right: 0;
+    }
+    #sulvid {
+        position: relative;
+        margin: auto;
+        display: block;
+    }
+    #rectrad {
+        border-radius: 0 0 0 0;
+    }
+}
+
+@media(max-width:479px) {
+    #cov1 {
+        font-size: 11em;
+    }
+}

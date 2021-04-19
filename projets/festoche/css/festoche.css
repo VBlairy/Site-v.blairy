@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Bahianita';
+    font-weight: 400;
+    src: url('../fonts/Bahianita-Regular.ttf');
+}
+
+
+@font-face {
+    font-family: 'Bahiana Regular';
+    src: url('../fonts/Bahiana-Regular.ttf');
+}
+
+body {
+    background: #254053;
+    position: relative;
+}
+.wrap {
+    font-family: 'Bahiana Regular', sans-serif;
+    font-size: 72px;
+    color: #9F502F;
+    max-width: 100%;
+
+}
+
+.headsvg {
+    max-width: 100%;
+}
+
+.gizeh {
+    margin-top: -15px;
+    max-width: 100%;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    margin-top: -40px;
+    max-width: 100%;
+}
+
+.nav a {
+    color: #9F502F;
+    padding-left: 0;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.current {
+    font-weight: bolder;
+}
+
+.trans:hover {
+    transform: scaley(1.3);
+    color: #254053;
+    transition: 2s;
+}
+
+@media(max-width:991px) {
+    .nav {
+        margin-top: -22px;
+    }
+
+    .wrap {
+        font-size: 59px;
+    }
+}
+
+@media(max-width:767px) {
+    .nav {
+        display: block;
+    }
+
+    .wrap {
+        font-size: 50px;
+    }
+}
+
+

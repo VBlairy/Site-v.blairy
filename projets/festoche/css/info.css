@@ -1,0 +1,131 @@
+#rect1 {
+    background: #9F502F;
+    border-top: 8px solid #254053;
+    padding: 25px 30px 120px 30px;
+    margin-top: -27px;
+}
+
+.textesimple{
+    z-index: 2;
+    position: relative;
+    color: #254053;
+    width: 100%;
+    text-align: left;
+    font-family: 'Bahiana Regular', sans-serif;
+    font-size: 2.5em;
+    line-height: 2em;
+}
+
+.sous-titre{
+    font-family: 'Bahiana Regular', sans-serif;
+    font-size: 1.50em;
+}
+
+.titre{
+    font-family: 'Bahiana Regular', sans-serif;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+#pentasulfBlock{
+    position: relative;
+    padding-top: 10%;
+    font-size: 8px;
+}
+
+#pentasulf{
+    z-index: 1;
+    position: absolute;
+    width: 28.2%;
+    right: 0;
+    top: -15%;
+}
+
+#pratique{
+    color: #9F502F;
+    text-align: right;
+    font-family: 'Bahiana Regular', sans-serif;
+    font-size: 15.625em;
+    display: block;
+    margin-right: 26.5%;
+    line-height: 1.2em;
+}
+
+#venir{
+    color: #9F502F;
+    text-align: center;
+    font-family: 'Bahiana Regular', sans-serif;
+    display: block;
+    line-height: 1.2em;
+    margin-left: -2%;
+    right: 30px;
+    font-size: 25em;
+}
+
+#rect2 {
+    position: relative;
+    background: #9F502F;
+    padding: 25px 100px 25px 100px;
+    margin-top: -60px;
+}
+
+#souf{
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    right: 60px;
+}
+
+@media(max-width:1191px){
+    body {
+        font-size: 11px;
+    }
+
+    #rect2 {
+        padding: 25px 100px 200px 110px;
+    }
+}
+
+@media(max-width:991px) {
+    #pentasulfBlock {
+        font-size: 7px;
+    }
+
+    #rect1 {
+        padding: 25px 30px 130px 30px;
+    }
+
+    #rect2 {
+        padding: 25px 30px 200px 30px;
+    }
+
+    #pentasulf {
+        width: 50%;
+        right: 0;
+        top: -165px;
+        line-height: 1em;
+    }
+
+    #pratique {
+        text-align: left;
+    }
+}
+
+@media(max-width:767px) {
+    #rect1 {
+        padding: 25px 30px 165px 30px;
+    }
+
+    #pentasulfBlock {
+        font-size: 4px;
+    }
+    #rect2 {
+        margin-top: 0;
+    }
+}
+
+@media(max-width:479px){
+    #rect1 {
+        padding: 25px 30px 200px 30px;
+    }
+}

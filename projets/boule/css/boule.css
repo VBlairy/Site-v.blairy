@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Px437 IBM PS/2thin1';
+    src: url('../fonts/Px437_IBM_PS2thin1-more.ttf') format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Px437 IBM PS/2thin2';
+    src: url('../fonts/Px437_IBM_PS2thin2-more.ttf') format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+body {
+    overflow: hidden;
+    background-color: black;
+    font-family: 'Px437 IBM PS/2thin1', serif;
+}
+
+#hand,
+#boule {
+    height: 100vh;
+}
+
+#hand {
+    position: absolute;
+
+}
+
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    margin-top: 100px;
+
+}
+
+#word {
+    position: absolute;
+    top: 25%;
+    left: -2%;
+    transform: scale(0);
+    color: #0F0;
+    font-weight: bold;
+    opacity: 1;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+#stage {
+    background: #000;
+    overflow: hidden;
+}
+
+.logo {
+    width: 2000px;
+    height: 1100px;
+    display: block;
+    margin-bottom: 80px;
+}

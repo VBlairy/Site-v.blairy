@@ -1,0 +1,45 @@
+body {
+    background: #000;
+    color: #0f0;
+    margin: 24px;
+    font-family: 'Px437 IBM PS/2thin4', serif;
+}
+
+.txt1 {
+    font-size: 80px;
+    margin-left: -15px;
+}
+
+.txt50, .txt51 {
+    font-size: 80px;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    text-align-last: center;
+    vertical-align: center;
+}
+
+svg, .txt1, .txt2, .txt3, .txt4, .txt5, .txt6, .txt7, .txt8, .txt9, .txt10, .txt11, .txt12 > span, .txt30 > span, .txt40 > .dot, .txt50, .txt51 {
+    display: none;
+}
+
+body .irma {
+    font-family: sans-serif;
+    margin: auto;
+    display: grid;
+    grid-auto-flow: row;
+    font-size: 11px;
+    background: #000;
+    color: #fff;
+    height: 100vh;
+    align-items: center;
+}
+
+.line {
+    line-height: 2.5vh;
+    font-size: 2.5vh;
+}
+
+.br1 {
+    display: none;
+}
